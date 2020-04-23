@@ -17,6 +17,7 @@ defmodule QaspecWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    get "/qaspec", IndexPageController, :index
   end
 
   # Other scopes may use custom stacks.
