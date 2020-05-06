@@ -13,10 +13,10 @@ config :qaspec,
 # Configures the endpoint
 config :qaspec, QaspecWeb.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "0wKqb80syE3Aykt0IEsTiOaNQesKErkA8O3a2UXaRMbnygdrRCckLGlMapGJSjTA",
-  render_errors: [view: QaspecWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: Qaspec.PubSub, adapter: Phoenix.PubSub.PG2],
-  live_view: [signing_salt: "hzLTj+g0"]
+  secret_key_base: "TTh2PBM4mqW36VQlLlYkSbc+bLnPIBy9s9m/4Bn+YdRQhuUbsgHJsyvHEJH4zKEc",
+  render_errors: [view: QaspecWeb.ErrorView, accepts: ~w(html json), layout: false],
+  pubsub_server: Qaspec.PubSub,
+  live_view: [signing_salt: "bXcxmYE0"]
 
 # Configures Elixir's Logger
 config :logger, :console,
